@@ -5,21 +5,21 @@
 class Dollarlint < Formula
   desc "Validate JSON-family, YAML, and TOML files against their declared JSON Schemas."
   homepage "https://github.com/dollarlint/dollarlint"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dollarlint/dollarlint/releases/download/v0.1.3/dollarlint_0.1.3_darwin_amd64.tar.gz"
-      sha256 "1d3f6c964db1cf20944e365f65f7b1621f1c5c74bcfd8c134c3f6a5b7fef626b"
+      url "https://github.com/dollarlint/dollarlint/releases/download/v0.1.4/dollarlint_0.1.4_darwin_amd64.tar.gz"
+      sha256 "e4f199c853905fe3aaad9873f5df20f524e3371759905159d5676e4808c63892"
 
       define_method(:install) do
         bin.install "dollarlint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dollarlint/dollarlint/releases/download/v0.1.3/dollarlint_0.1.3_darwin_arm64.tar.gz"
-      sha256 "f4ba18f55dc0df5298e9ac646f5308c23a0f34a9d8c7f34b38041c632716f99b"
+      url "https://github.com/dollarlint/dollarlint/releases/download/v0.1.4/dollarlint_0.1.4_darwin_arm64.tar.gz"
+      sha256 "371c7ecb902453a428f603b02747bd17a7da70aca8edeb857929085e252f3193"
 
       define_method(:install) do
         bin.install "dollarlint"
@@ -29,15 +29,15 @@ class Dollarlint < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dollarlint/dollarlint/releases/download/v0.1.3/dollarlint_0.1.3_linux_amd64.tar.gz"
-      sha256 "efdf8069fd292a8f65ca70df0da705909aa6457e40d22e3bd8b1dde7ce5e2045"
+      url "https://github.com/dollarlint/dollarlint/releases/download/v0.1.4/dollarlint_0.1.4_linux_amd64.tar.gz"
+      sha256 "8f00c1bc65329ce4512995e9dd34f189146265026d181d8daeb6e428673a3095"
       define_method(:install) do
         bin.install "dollarlint"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dollarlint/dollarlint/releases/download/v0.1.3/dollarlint_0.1.3_linux_arm64.tar.gz"
-      sha256 "a4ccf3201adc78a6c86518d26f7b3a8fa43b1ced8f18ee5dad84f11e15e128b8"
+      url "https://github.com/dollarlint/dollarlint/releases/download/v0.1.4/dollarlint_0.1.4_linux_arm64.tar.gz"
+      sha256 "e1d6ae941ea4d95ec66bb5deacd8c05cdb151d4380d8ab6988b7a421a344b529"
       define_method(:install) do
         bin.install "dollarlint"
       end
